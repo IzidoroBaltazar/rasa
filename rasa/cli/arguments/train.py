@@ -63,9 +63,7 @@ def add_force_param(parser: Union[argparse.ArgumentParser, argparse._ActionsCont
 
 def add_dry_param(parser: Union[argparse.ArgumentParser, argparse._ActionsContainer]):
     parser.add_argument(
-        "--dry",
-        action="store_true",
-        help="Check if models need to be retrained.",
+        "--dry", action="store_true", help="Check if models need to be retrained.",
     )
 
 

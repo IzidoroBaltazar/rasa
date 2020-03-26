@@ -191,9 +191,13 @@ async def _train_async_internal(
 
     if dry:
         if fingerprint_comparison.core:
-            print_warning("Core will be trained: {}".format(fingerprint_comparison.core))
+            print_warning(
+                "Core will be trained: {}".format(fingerprint_comparison.core)
+            )
         else:
-            print_success("Core will be trained: {}".format(fingerprint_comparison.core))
+            print_success(
+                "Core will be trained: {}".format(fingerprint_comparison.core)
+            )
 
         if fingerprint_comparison.nlu:
             print_warning("NLU will be trained: {}".format(fingerprint_comparison.nlu))
