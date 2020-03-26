@@ -159,6 +159,9 @@ async def _train_async_internal(
 
     if stories.is_empty():
         print_warning("No stories present. Just a Rasa NLU model will be trained.")
+        if dry:
+            print_warning("NLU will be trained: True")
+            sys.exit(0)
         return await _train_nlu_with_validated_data(
             file_importer,
             output=output_path,
@@ -168,6 +171,9 @@ async def _train_async_internal(
 
     if nlu_data.is_empty():
         print_warning("No NLU data present. Just a Rasa Core model will be trained.")
+        if dry:
+            print_warning("Core will be trained: True")
+            sys.exit(0)
         return await _train_core_with_validated_data(
             file_importer,
             output=output_path,
