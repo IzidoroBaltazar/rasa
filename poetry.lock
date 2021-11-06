@@ -481,7 +481,7 @@ python-versions = "*"
 
 [[package]]
 name = "dask"
-version = "2021.7.2"
+version = "2021.10.0"
 description = "Parallel PyData with Task Scheduling"
 category = "main"
 optional = false
@@ -496,12 +496,12 @@ pyyaml = "*"
 toolz = ">=0.8.2"
 
 [package.extras]
-array = ["numpy (>=1.16)"]
-complete = ["bokeh (>=1.0.0,!=2.0.0)", "distributed (==2021.07.2)", "numpy (>=1.16)", "pandas (>=0.25.0)"]
-dataframe = ["numpy (>=1.16)", "pandas (>=0.25.0)"]
-diagnostics = ["bokeh (>=1.0.0,!=2.0.0)"]
-distributed = ["distributed (==2021.07.2)"]
-test = ["pytest", "pytest-rerunfailures", "pytest-xdist"]
+array = ["numpy (>=1.18)"]
+complete = ["bokeh (>=1.0.0,!=2.0.0)", "distributed (==2021.10.0)", "jinja2", "numpy (>=1.18)", "pandas (>=1.0)"]
+dataframe = ["numpy (>=1.18)", "pandas (>=1.0)"]
+diagnostics = ["bokeh (>=1.0.0,!=2.0.0)", "jinja2"]
+distributed = ["distributed (==2021.10.0)"]
+test = ["pytest", "pytest-rerunfailures", "pytest-xdist", "pre-commit"]
 
 [[package]]
 name = "dataclasses"
@@ -3309,7 +3309,7 @@ transformers = ["transformers"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7,<3.9"
-content-hash = "49160ca8cd591f7dab8baaaaa8fa23ea19279d8504ccdb352937ff7037472c63"
+content-hash = "dac495354d6008279f688c629755f7eb468e721b74abe7776d9357545a8508aa"
 
 [metadata.files]
 absl-py = [
@@ -3647,8 +3647,8 @@ cymem = [
     {file = "cymem-2.0.6.tar.gz", hash = "sha256:169725b5816959d34de2545b33fee6a8021a6e08818794a426c5a4f981f17e5e"},
 ]
 dask = [
-    {file = "dask-2021.7.2-py3-none-any.whl", hash = "sha256:63a6e56cd64ae6f9cee2cdddd756a31222a563ea7a4cfee472ca5ce25ec02179"},
-    {file = "dask-2021.7.2.tar.gz", hash = "sha256:41727347fb4c098c5cafe3e1e24634b086461603cc3b6f6f71f335abf15833c8"},
+    {file = "dask-2021.10.0-py3-none-any.whl", hash = "sha256:b678d802ea8126c0168a1b429182b7dc01ade8ad84cfd62b804c52c4c29b6fc3"},
+    {file = "dask-2021.10.0.tar.gz", hash = "sha256:a98b2e44acaad369bb21f79fc92f756532acfe62c3aeba3982006b7339d0d2e3"},
 ]
 dataclasses = [
     {file = "dataclasses-0.6-py3-none-any.whl", hash = "sha256:454a69d788c7fda44efd71e259be79577822f5e3f53f029a22d08004e951dc9f"},
